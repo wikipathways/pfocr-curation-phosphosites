@@ -8,6 +8,7 @@ library(dplyr)
 
 ## Read in PFOCR fetch results
 df.all <- readRDS("pfocr.rds") 
+df.all <- df.all[sample(nrow(df.all)),] #randomize rows every launch
 df.all <- df.all %>%
   dplyr::select(figid, pmcid, filename, figtitle, figlink) 
 fig.list.all <- as.character(df.all$figid)
