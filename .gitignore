@@ -1,6 +1,6 @@
-pfocr_curated_training.rds
+pfocr_screened.rds
 .Rproj.user
 .Rhistory
 .RData
 .Ruserdata
-.Rproj
+*.Rproj

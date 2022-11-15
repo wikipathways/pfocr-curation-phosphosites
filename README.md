@@ -6,7 +6,7 @@ The Pathway Figure OCR project (PFOCR) aims to identify pathway figures from the
 
 ## Purpose
 This repo contains a shiny app that you can run locally to help with classifying the contents of the PFOCR project. This particular version of the tool generates a report offering a count of figures
-containing phosphosite information and a count of the number of sites per figure.
+containing phosphosite information.
 
 ## New Curator Training
 If this is your first time, go ahead and clone the repo and give the tool a try. By default, the tool is in [training mode](https://github.com/wikipathways/pfocr-curation-phosphosites/blob/main/app.R#L11).
@@ -23,8 +23,8 @@ The tool will read in an RDS of figure metadata to be curated (e.g., pfocr_curat
 ![Screenshot](screenshot.png?raw=true "Screenshot")
 
 **Classification buttons**
- * No Phospho - contains no phosphorylations
- * Some Phospho - contains non-specific phosphorylations (e.g., -P) 
- * Phosphosite - contains specific phosphosites (e.g., SER230)
- * Undo - return to previous figure to change classification
+ * None (right arrow)- contains no phosphorylations
+ * NS phospho (down arrow) - contains non-specific phosphorylations (e.g., -P) 
+ * Phosphosites (up arrow) - contains specific phosphosites (e.g., SER230)
+ * Undo (left arrow) - return to previous figure to change classification
 
